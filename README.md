@@ -8,6 +8,7 @@ Dashboard has buttons that links to 3 other screens on click<br>
 
 <br><br>
 Demo<br>
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+<img src="https://github.com/wdtheprovider/BasicApp/blob/master/ezgif.com-gif-maker.gif" width="350" height="540"/>
+
 
 
