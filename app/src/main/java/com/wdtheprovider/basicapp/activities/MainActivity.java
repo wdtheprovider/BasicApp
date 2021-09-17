@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
 
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,25 +54,21 @@ public class MainActivity extends AppCompatActivity {
         nav_title_2.setText("dingaan@wdtheprovider.co.za");
 
 
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @SuppressLint("NonConstantResourceId")
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        navigationView.setNavigationItemSelectedListener(item -> {
 
-                switch (item.getItemId()) {
-                    case R.id.fragment_1:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Dashboard()).commit();
-                        break;
-                    case R.id.fragment_2:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_2()).commit();
-                        break;
-                    case R.id.fragment_3:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_3()).commit();
-                        break;
-                }
-                drawer.closeDrawer(GravityCompat.START);
-                return true;
+            switch (item.getItemId()) {
+                case R.id.fragment_1:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Dashboard()).commit();
+                    break;
+                case R.id.fragment_2:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_2()).commit();
+                    break;
+                case R.id.fragment_3:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_3()).commit();
+                    break;
             }
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
         });
 
 
@@ -93,22 +90,6 @@ public class MainActivity extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-        }
-    }
-
-    @SuppressLint("NonConstantResourceId")
-    public void OpenActivity(View view) {
-
-        switch (view.getId()) {
-            case R.id.btn1:
-                startActivity(new Intent(this, Screen1Activity.class));
-                break;
-            case R.id.btn2:
-                startActivity(new Intent(this, Screen2Activity.class));
-                break;
-            case R.id.btn3:
-                startActivity(new Intent(this, Screen3Activity.class));
-                break;
         }
     }
 

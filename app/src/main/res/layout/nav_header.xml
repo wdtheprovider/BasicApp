@@ -9,12 +9,14 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
+        android:visibility="invisible"
         android:id="@+id/nav_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher_round" />
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/nav_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,6 +24,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/nav_title_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

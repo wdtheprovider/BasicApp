@@ -4,28 +4,28 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/fragment_1"
-            android:icon="@drawable/ic_happy"
-            android:title="Fragment 1" />
+            android:icon="@drawable/ic_read"
+            android:title="View Jobs" />
         <item
             android:id="@+id/fragment_2"
-            android:icon="@drawable/ic_happy"
-            android:title="Fragment 2" />
+            android:icon="@drawable/ic_add"
+            android:title="Post Jobs" />
         <item
             android:id="@+id/fragment_3"
-            android:icon="@drawable/ic_happy"
-            android:title="Fragment 3" />
+            android:icon="@drawable/ic_edit"
+            android:title="Update Job" />
     </group>
 
     <item android:title="">
         <menu>
             <item
                 android:id="@+id/fragment_4"
-                android:icon="@drawable/ic_happy"
-                android:title="Fragment 4" />
+                android:icon="@drawable/ic_rate"
+                android:title="Rate App" />
             <item
                 android:id="@+id/fragment_5"
                 android:icon="@drawable/ic_happy"
-                android:title="Fragment 5" />
+                android:title="More Apps" />
         </menu>
     </item>
 

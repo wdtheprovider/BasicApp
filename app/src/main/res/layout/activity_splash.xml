@@ -8,8 +8,20 @@
 
 
     <ProgressBar
+        android:id="@+id/pp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
+
+    <TextView
+        android:text="WELCOME"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>
