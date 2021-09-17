@@ -2,7 +2,7 @@
 
  <br><br>
 Firebase Record<br>
-<img src="https://github.com/wdtheprovider/BasicApp/blob/master/remove.gif" width="350" height="540"/>
+<img src="https://github.com/wdtheprovider/BasicApp/blob/master/Capture.PNG" width="950" height="540"/>
 
 <br><br>
 Demo Post<br>
